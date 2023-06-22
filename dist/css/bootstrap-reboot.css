@@ -37,6 +37,11 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-oranges: #fd7e14;
+  --bs-pinks: #d63384;
+  --bs-purples: #6f42c1;
+  --bs-yellows: #ffc107;
+  --bs-blues: #0d6efd;
+  --bs-greens: #198754;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -46,6 +51,11 @@
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
   --bs-oranges-rgb: 253, 126, 20;
+  --bs-pinks-rgb: 214, 51, 132;
+  --bs-purples-rgb: 111, 66, 193;
+  --bs-yellows-rgb: 255, 193, 7;
+  --bs-blues-rgb: 13, 110, 253;
+  --bs-greens-rgb: 25, 135, 84;
   --bs-primary-text-emphasis: #052c65;
   --bs-secondary-text-emphasis: #2b2f32;
   --bs-success-text-emphasis: #0a3622;
@@ -261,11 +271,11 @@ h5 {
 }
 
 h6 {
-  font-size: calc(1.525rem + 3.3vw);
+  font-size: calc(1.325rem + 0.9vw);
 }
 @media (min-width: 1200px) {
   h6 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
 

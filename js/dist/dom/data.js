@@ -21,7 +21,7 @@
    */
 
   const elementMap = new Map();
-  const data = {
+  var data = {
     set(element, key, instance) {
       if (!elementMap.has(element)) {
         elementMap.set(element, new Map());

@@ -1,5 +1,5 @@
 /*!
-  * Bootstrap v5.3.0-alpha3 (https://getbootstrap.com/)
+  * Bootstrap [object Object] v5.3.0-alpha3 (https://getbootstrap.com/)
   * Copyright 2011-2023 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
@@ -21,7 +21,7 @@
    */
 
   const elementMap = new Map();
-  const Data = {
+  var Data = {
     set(element, key, instance) {
       if (!elementMap.has(element)) {
         elementMap.set(element, new Map());
@@ -1818,7 +1818,7 @@
   } // eslint-disable-next-line import/no-unused-modules
 
 
-  const applyStyles$1 = {
+  var applyStyles$1 = {
     name: 'applyStyles',
     enabled: true,
     phase: 'write',
@@ -2134,7 +2134,7 @@
   } // eslint-disable-next-line import/no-unused-modules
 
 
-  const arrow$1 = {
+  var arrow$1 = {
     name: 'arrow',
     enabled: true,
     phase: 'main',
@@ -2302,7 +2302,7 @@
   } // eslint-disable-next-line import/no-unused-modules
 
 
-  const computeStyles$1 = {
+  var computeStyles$1 = {
     name: 'computeStyles',
     enabled: true,
     phase: 'beforeWrite',
@@ -2349,7 +2349,7 @@
   } // eslint-disable-next-line import/no-unused-modules
 
 
-  const eventListeners = {
+  var eventListeners = {
     name: 'eventListeners',
     enabled: true,
     phase: 'write',
@@ -2855,7 +2855,7 @@
   } // eslint-disable-next-line import/no-unused-modules
 
 
-  const flip$1 = {
+  var flip$1 = {
     name: 'flip',
     enabled: true,
     phase: 'main',
@@ -2917,7 +2917,7 @@
   } // eslint-disable-next-line import/no-unused-modules
 
 
-  const hide$1 = {
+  var hide$1 = {
     name: 'hide',
     enabled: true,
     phase: 'main',
@@ -2969,7 +2969,7 @@
   } // eslint-disable-next-line import/no-unused-modules
 
 
-  const offset$1 = {
+  var offset$1 = {
     name: 'offset',
     enabled: true,
     phase: 'main',
@@ -2993,7 +2993,7 @@
   } // eslint-disable-next-line import/no-unused-modules
 
 
-  const popperOffsets$1 = {
+  var popperOffsets$1 = {
     name: 'popperOffsets',
     enabled: true,
     phase: 'read',
@@ -3128,7 +3128,7 @@
   } // eslint-disable-next-line import/no-unused-modules
 
 
-  const preventOverflow$1 = {
+  var preventOverflow$1 = {
     name: 'preventOverflow',
     enabled: true,
     phase: 'main',
@@ -3478,47 +3478,47 @@
     defaultModifiers: defaultModifiers
   }); // eslint-disable-next-line import/no-unused-modules
 
-  const Popper = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  var Popper = /*#__PURE__*/Object.freeze({
     __proto__: null,
-    afterMain,
-    afterRead,
-    afterWrite,
+    afterMain: afterMain,
+    afterRead: afterRead,
+    afterWrite: afterWrite,
     applyStyles: applyStyles$1,
     arrow: arrow$1,
-    auto,
-    basePlacements,
-    beforeMain,
-    beforeRead,
-    beforeWrite,
-    bottom,
-    clippingParents,
+    auto: auto,
+    basePlacements: basePlacements,
+    beforeMain: beforeMain,
+    beforeRead: beforeRead,
+    beforeWrite: beforeWrite,
+    bottom: bottom,
+    clippingParents: clippingParents,
     computeStyles: computeStyles$1,
-    createPopper,
+    createPopper: createPopper,
     createPopperBase: createPopper$2,
     createPopperLite: createPopper$1,
-    detectOverflow,
-    end,
-    eventListeners,
+    detectOverflow: detectOverflow,
+    end: end,
+    eventListeners: eventListeners,
     flip: flip$1,
     hide: hide$1,
-    left,
-    main,
-    modifierPhases,
+    left: left,
+    main: main,
+    modifierPhases: modifierPhases,
     offset: offset$1,
-    placements,
-    popper,
-    popperGenerator,
+    placements: placements,
+    popper: popper,
+    popperGenerator: popperGenerator,
     popperOffsets: popperOffsets$1,
     preventOverflow: preventOverflow$1,
-    read,
-    reference,
-    right,
-    start,
-    top,
-    variationPlacements,
-    viewport,
-    write
-  }, Symbol.toStringTag, { value: 'Module' }));
+    read: read,
+    reference: reference,
+    right: right,
+    start: start,
+    top: top,
+    variationPlacements: variationPlacements,
+    viewport: viewport,
+    write: write
+  });
 
   /**
    * --------------------------------------------------------------------------
@@ -4747,34 +4747,6 @@
    * --------------------------------------------------------------------------
    */
 
-  const uriAttributes = new Set(['background', 'cite', 'href', 'itemtype', 'longdesc', 'poster', 'src', 'xlink:href']);
-
-  /**
-   * A pattern that recognizes a commonly useful subset of URLs that are safe.
-   *
-   * Shout-out to Angular https://github.com/angular/angular/blob/12.2.x/packages/core/src/sanitization/url_sanitizer.ts
-   */
-  const SAFE_URL_PATTERN = /^(?:(?:https?|mailto|ftp|tel|file|sms):|[^#&/:?]*(?:[#/?]|$))/i;
-
-  /**
-   * A pattern that matches safe data URLs. Only matches image, video and audio types.
-   *
-   * Shout-out to Angular https://github.com/angular/angular/blob/12.2.x/packages/core/src/sanitization/url_sanitizer.ts
-   */
-  const DATA_URL_PATTERN = /^data:(?:image\/(?:bmp|gif|jpeg|jpg|png|tiff|webp)|video\/(?:mpeg|mp4|ogg|webm)|audio\/(?:mp3|oga|ogg|opus));base64,[\d+/a-z]+=*$/i;
-  const allowedAttribute = (attribute, allowedAttributeList) => {
-    const attributeName = attribute.nodeName.toLowerCase();
-    if (allowedAttributeList.includes(attributeName)) {
-      if (uriAttributes.has(attributeName)) {
-        return Boolean(SAFE_URL_PATTERN.test(attribute.nodeValue) || DATA_URL_PATTERN.test(attribute.nodeValue));
-      }
-      return true;
-    }
-
-    // Check if a regular expression validates the attribute.
-    return allowedAttributeList.filter(attributeRegex => attributeRegex instanceof RegExp).some(regex => regex.test(attributeName));
-  };
-
   // js-docs-start allow-list
   const ARIA_ATTRIBUTE_PATTERN = /^aria-[\w-]*$/i;
   const DefaultAllowlist = {
@@ -4812,6 +4784,28 @@
   };
   // js-docs-end allow-list
 
+  const uriAttributes = new Set(['background', 'cite', 'href', 'itemtype', 'longdesc', 'poster', 'src', 'xlink:href']);
+
+  /**
+   * A pattern that recognizes URLs that are safe wrt. XSS in URL navigation
+   * contexts.
+   *
+   * Shout-out to Angular https://github.com/angular/angular/blob/15.2.8/packages/core/src/sanitization/url_sanitizer.ts#L38
+   */
+  // eslint-disable-next-line unicorn/better-regex
+  const SAFE_URL_PATTERN = /^(?!javascript:)(?:[a-z0-9+.-]+:|[^&:/?#]*(?:[/?#]|$))/i;
+  const allowedAttribute = (attribute, allowedAttributeList) => {
+    const attributeName = attribute.nodeName.toLowerCase();
+    if (allowedAttributeList.includes(attributeName)) {
+      if (uriAttributes.has(attributeName)) {
+        return Boolean(SAFE_URL_PATTERN.test(attribute.nodeValue));
+      }
+      return true;
+    }
+
+    // Check if a regular expression validates the attribute.
+    return allowedAttributeList.filter(attributeRegex => attributeRegex instanceof RegExp).some(regex => regex.test(attributeName));
+  };
   function sanitizeHtml(unsafeHtml, allowList, sanitizeFunction) {
     if (!unsafeHtml.length) {
       return unsafeHtml;
@@ -5750,11 +5744,11 @@
         if (!anchor.hash || isDisabled(anchor)) {
           continue;
         }
-        const observableSection = SelectorEngine.findOne(anchor.hash, this._element);
+        const observableSection = SelectorEngine.findOne(decodeURI(anchor.hash), this._element);
 
         // ensure that the observableSection exists & is visible
         if (isVisible(observableSection)) {
-          this._targetLinks.set(anchor.hash, anchor);
+          this._targetLinks.set(decodeURI(anchor.hash), anchor);
           this._observableSections.set(anchor.hash, observableSection);
         }
       }
@@ -6274,7 +6268,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
-  const index_umd = {
+  var index_umd = {
     Alert,
     Button,
     Carousel,

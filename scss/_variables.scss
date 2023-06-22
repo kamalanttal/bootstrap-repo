@@ -17,6 +17,12 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
+$orange:  #fd7e14 !default;
+$pink:    #d63384 !default;
+$purple:  #6f42c1 !default;
+$yellow:  #ffc107 !default;
+$blue:    #0d6efd !default;
+$green:   #198754 !default;
 // scss-docs-end gray-color-variables
 
 // fusv-disable
@@ -248,6 +254,31 @@ $oranges: (
   "orange-900": $orange-900
 ) !default;
 
+$pink: (
+  "pink-100": $pink-100,
+  "pink-200": $pink-200,
+  "pink-300": $pink-300,
+  "pink-400": $pink-400,
+  "pink-500": $pink-500,
+  "pink-600": $pink-600,
+  "pink-700": $pink-700,
+  "pink-800": $pink-800,
+  "pink-900": $pink-900
+) !default;
+
+
+$orange: (
+  "orange-100": $orange-100,
+  "orange-200": $orange-200,
+  "orange-300": $orange-300,
+  "orange-400": $orange-400,
+  "orange-500": $orange-500,
+  "orange-600": $orange-600,
+  "orange-700": $orange-700,
+  "orange-800": $orange-800,
+  "orange-900": $orange-900
+) !default;
+
 $yellows: (
   "yellow-100": $yellow-100,
   "yellow-200": $yellow-200,
@@ -306,6 +337,12 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+$oranges:       $orange !default;
+$pinks:         $pink!default;
+$purples:       $purple!default;
+$yellows:       $yellow!default;
+$blues:         $blue!default;
+$greens:        $green!default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -317,7 +354,13 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "oranges":     $orange,
+  "pinks" :      $pink,
+  "purples":     $purple,
+  "yellows":     $yellow,
+  "blues" :      $blue,
+  "greens":      $green
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -488,7 +531,8 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1400px
+  xxl: 1400px,
+  pf:1224px
 ) !default;
 // scss-docs-end grid-breakpoints
 
@@ -506,7 +550,8 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1320px
+  xxl: 1460px,
+  pf:1224px
 ) !default;
 // scss-docs-end container-max-widths
 
@@ -636,7 +681,11 @@ $h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h6-font-size:                $font-size-base * 2 !default;
+$h7-font-size:                $font-size-base * 2.5 !default;
+$h8-font-size:                $font-size-base * 3 !default;
+$h9-font-size:                $font-size-base * 3.5 !default;
+$h10-font-size:                $font-size-base * 4 !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -646,11 +695,15 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
-) !default;
+  6: $h6-font-size,
+  7: $h7-font-size,
+  8: $h7-font-size,
+  9: $h7-font-size,
+  10: $h7-font-size,
+  ) !default;
 // scss-docs-end font-sizes
 
-// scss-docs-start headings-variables
+// scss-docs-start headings-variables 
 $headings-margin-bottom:      $spacer * .5 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
@@ -666,7 +719,11 @@ $display-font-sizes: (
   3: 4rem,
   4: 3.5rem,
   5: 3rem,
-  6: 2.5rem
+  6: 2.5rem,
+  7: 2rem,
+  8: 2.5rem,
+  9: 3rem,
+  10: 3.5rem,
 ) !default;
 
 $display-font-family: null !default;
