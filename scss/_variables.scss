@@ -18,11 +18,21 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 $orange:  #F04E23 !default;
+$orange-2: #FCBB75 !default;
+$orange3: #F47920 !default;
 $pink:    #d63384 !default;
 $purple:  #7B62F2 !default;
+$purple-2:  #8177B7 !default;
 $yellow:  #FFC222 !default;
+$yellow-2:  #FFE3A6 !default;
+$yellow-3: #FEDD00 !default;
 $blue:    #034EA2 !default;
+$blue-2:    #0066B3 !default;
+$blue-3:    #659AD2 !default;
+$bolt4k:    #659AD2 !default;
 $green:   #3A9948 !default;
+$green-2:   #3F542A !default;
+$green-3:   #3A9948 !default;
 // scss-docs-end gray-color-variables
 
 // fusv-disable
@@ -43,13 +53,23 @@ $grays: (
 
 // scss-docs-start color-variables
 $blue:    #034EA2 !default;
+$blue-2:    #0066B3 !default;
+$blue-3:    #659AD2 !default;
+$bolt4k:    #659AD2 !default;
 $indigo:  #6610f2 !default;
 $purple:  #7B62F2 !default;
 $pink:    #d63384 !default;
 $red:     #dc3545 !default;
 $orange:  #F04E23 !default;
+$orange-2:  #FCBB75 !default;
+$orange3:  #F47920 !default;
+$purple-2:  #8177B7 !default;
 $yellow:  #FFC222 !default;
+$yellow-2:  #FFE3A6 !default;
+$yellow-3: #FEDD00 !default;
 $green:   #3A9948 !default;
+$green-2:   #3F542A !default;
+$green-3:   #3A9948 !default;
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
 // scss-docs-end color-variables
@@ -57,13 +77,23 @@ $cyan:    #0dcaf0 !default;
 // scss-docs-start colors-map
 $colors: (
   "blue":       $blue,
+  "blue-2":       $blue-2,
+  "blue-3":       $blue-3,
+  "bolt4k":       $bolt4k,
   "indigo":     $indigo,
   "purple":     $purple,
+  "purple-2":     $purple-2,
   "pink":       $pink,
   "red":        $red,
   "orange":     $orange,
+  "orange-2":    $orange-2,
+  "orange3":    $orange3,
   "yellow":     $yellow,
+  "yellow-2":     $yellow-2,
+  "yellow-3":     $yellow-3,
   "green":      $green,
+  "green-2":      $green-2,
+  "green-3":      $green-3,
   "teal":       $teal,
   "cyan":       $cyan,
   "black":      $black,
@@ -194,6 +224,43 @@ $blues: (
   "blue-900": $blue-900
 ) !default;
 
+$blue-2: (
+  "blue-2-100": $blue-2-100,
+  "blue-2-200": $blue-2-200,
+  "blue-2-300": $blue-2-300,
+  "blue-2-400": $blue-2-400,
+  "blue-2-500": $blue-2-500,
+  "blue-2-600": $blue-2-600,
+  "blue-2-700": $blue-2-700,
+  "blue-2-800": $blue-2-800,
+  "blue-2-900": $blue-2-900
+) !default;
+
+$blue-3: (
+  "blue-3-100": $blue-3-100,
+  "blue-3-200": $blue-3-200,
+  "blue-3-300": $blue-3-300,
+  "blue-3-400": $blue-3-400,
+  "blue-3-500": $blue-3-500,
+  "blue-3-600": $blue-3-600,
+  "blue-3-700": $blue-3-700,
+  "blue-3-800": $blue-3-800,
+  "blue-3-900": $blue-3-900
+) !default;
+
+$bolt4k: (
+  "bolt4k-100": $bolt4k-100,
+  "bolt4k-200": $bolt4k-200,
+  "bolt4k-300": $bolt4k-300,
+  "bolt4k-400": $bolt4k-400,
+  "bolt4k-500": $bolt4k-500,
+  "bolt4k-600": $bolt4k-600,
+  "bolt4k-700": $bolt4k-700,
+  "bolt4k-800": $bolt4k-800,
+  "bolt4k-900": $bolt4k-900
+) !default;
+
+
 $indigos: (
   "indigo-100": $indigo-100,
   "indigo-200": $indigo-200,
@@ -216,6 +283,18 @@ $purples: (
   "purple-700": $purple-700,
   "purple-800": $purple-800,
   "purple-900": $purple-900
+) !default;
+
+$purple-2: (
+  "purple-2-100": $purple-2-100,
+  "purple-2-200": $purple-2-200,
+  "purple-2-300": $purple-2-300,
+  "purple-2-400": $purple-2-400,
+  "purple-2-500": $purple-2-500,
+  "purple-2-600": $purple-2-600,
+  "purple-2-700": $purple-2-700,
+  "purple-2-800": $purple-2-800,
+  "purple-2-900": $purple-2-900
 ) !default;
 
 $pinks: (
@@ -252,6 +331,30 @@ $oranges: (
   "orange-700": $orange-700,
   "orange-800": $orange-800,
   "orange-900": $orange-900
+) !default;
+
+$orange-2: (
+  "orange-2-100": $orange-2-100,
+  "orange-2-00": $orange-2-200,
+  "orange-2-300": $orange-2-300,
+  "orange-2-400": $orange-2-400,
+  "orange-2-500": $orange-2-500,
+  "orange-2-600": $orange-2-600,
+  "orange-2-700": $orange-2-700,
+  "orange-2-800": $orange-2-800,
+  "orange-2-900": $orange-2-900
+) !default;
+
+$orange3: (
+  "orange3-100": $orange3-100,
+  "orange3-00":  $orange3-200,
+  "orange3-300": $orange3-300,
+  "orange3-400": $orange3-400,
+  "orange3-500": $orange3-500,
+  "orange3-600": $orange3-600,
+  "orange3-700": $orange3-700,
+  "orange3-800": $orange3-800,
+  "orange3-900": $orange3-900
 ) !default;
 
 $pink: (
@@ -291,6 +394,31 @@ $yellows: (
   "yellow-900": $yellow-900
 ) !default;
 
+$yellow-2: (
+  "yellow-2-100": $yellow-2-100,
+  "yellow-2-200": $yellow-2-200,
+  "yellow-2-300": $yellow-2-300,
+  "yellow-2-400": $yellow-2-400,
+  "yellow-2-500": $yellow-2-500,
+  "yellow-2-600": $yellow-2-600,
+  "yellow-2-700": $yellow-2-700,
+  "yellow-2-800": $yellow-2-800,
+  "yellow-2-900": $yellow-2-900
+) !default;
+
+$yellow-3: (
+  "yellow-3-100": $yellow-3-100,
+  "yellow-3-200": $yellow-3-200,
+  "yellow-3-300": $yellow-3-300,
+  "yellow-3-400": $yellow-3-400,
+  "yellow-3-500": $yellow-3-500,
+  "yellow-3-600": $yellow-3-600,
+  "yellow-3-700": $yellow-3-700,
+  "yellow-3-800": $yellow-3-800,
+  "yellow-3-900": $yellow-3-900
+) !default;
+
+
 $greens: (
   "green-100": $green-100,
   "green-200": $green-200,
@@ -302,6 +430,31 @@ $greens: (
   "green-800": $green-800,
   "green-900": $green-900
 ) !default;
+
+$green-2: (
+  "green-2-100": $green-2-100,
+  "green-2-200": $green-2-200,
+  "green-2-300": $green-2-300,
+  "green-2-400": $green-2-400,
+  "green-2-500": $green-2-500,
+  "green-2-600": $green-2-600,
+  "green-2-700": $green-2-700,
+  "green-2-800": $green-2-800,
+  "green-2-900": $green-2-900
+) !default;
+
+$green-3: (
+  "green-3-100": $green-3-100,
+  "green-3-200": $green-3-200,
+  "green-3-300": $green-3-300,
+  "green-3-400": $green-3-400,
+  "green-3-500": $green-3-500,
+  "green-3-600": $green-3-600,
+  "green-3-700": $green-3-700,
+  "green-3-800": $green-3-800,
+  "green-3-900": $green-3-900
+) !default;
+
 
 $teals: (
   "teal-100": $teal-100,
@@ -338,11 +491,21 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 $oranges:       $orange !default;
+$orange-2:       $orange-2 !default;
+$orange3:       $orange3 !default;
 $pinks:         $pink!default;
 $purples:       $purple!default;
+$purple-2:       $purple-2!default;
 $yellows:       $yellow!default;
+$yellow-2:       $yellow-2!default;
+$yellow-3:       $yellow-3!default;
 $blues:         $blue!default;
+$blue-2:         $blue-2!default;
+$blues-3:         $blue-2!default;
+$bolt4k:         $bolt4k!default;
 $greens:        $green!default;
+$green-2:        $green-2!default;
+$greens-3:        $green-3!default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -356,11 +519,21 @@ $theme-colors: (
   "light":      $light,
   "dark":       $dark,
   "oranges":     $orange,
+  "orange-2":     $orange-2,
+  "orange3":     $orange3,
   "pinks" :      $pink,
   "purples":     $purple,
+  "purple-2":     $purple-2,
   "yellows":     $yellow,
+  "yellow-2":     $yellow-2,
+  "yellow-3":     $yellow-3,
   "blues" :      $blue,
-  "greens":      $green
+  "blue-2" :      $blue-2,
+  "blue-3" :      $blue-3,
+  "bolt4k" :      $bolt4k,
+  "greens":      $green,
+  "green-2":      $green-2,
+  "green-3":      $green-3
 ) !default;
 // scss-docs-end theme-colors-map
 
