@@ -6,9 +6,10 @@
 :root,
 [data-bs-theme=light] {
   --bs-blue: #034EA2;
+  --bs-blue-dark: #0089FA;
   --bs-blue-2: #0066B3;
   --bs-blue-3: #659AD2;
-  --bs-bolt4k: #659AD2;
+  --bs-bolt4k: #009AF8;
   --bs-indigo: #6610f2;
   --bs-purple: #7B62F2;
   --bs-purple-2: #8177B7;
@@ -22,7 +23,7 @@
   --bs-yellow-3: #FEDD00;
   --bs-green: #3A9948;
   --bs-green-2: #3F542A;
-  --bs-green-3: #3A9948;
+  --bs-green-3: #89C765;
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
   --bs-black: #000;
@@ -58,10 +59,10 @@
   --bs-blues: #034EA2;
   --bs-blue-2: #0066B3;
   --bs-blue-3: #659AD2;
-  --bs-bolt4k: #659AD2;
+  --bs-bolt4k: #009AF8;
   --bs-greens: #3A9948;
   --bs-green-2: #3F542A;
-  --bs-green-3: #3A9948;
+  --bs-green-3: #89C765;
   --bs-primary-rgb: 3, 78, 162;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 58, 153, 72;
@@ -82,10 +83,10 @@
   --bs-blues-rgb: 3, 78, 162;
   --bs-blue-2-rgb: 0, 102, 179;
   --bs-blue-3-rgb: 101, 154, 210;
-  --bs-bolt4k-rgb: 101, 154, 210;
+  --bs-bolt4k-rgb: 0, 154, 248;
   --bs-greens-rgb: 58, 153, 72;
   --bs-green-2-rgb: 63, 84, 42;
-  --bs-green-3-rgb: 58, 153, 72;
+  --bs-green-3-rgb: 137, 199, 101;
   --bs-primary-text-emphasis: #011f41;
   --bs-secondary-text-emphasis: #2b2f32;
   --bs-success-text-emphasis: #173d1d;
@@ -327,7 +328,7 @@
 
 .text-bg-bolt4k {
   color: #000 !important;
-  background-color: RGBA(101, 154, 210, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(0, 154, 248, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-greens {
@@ -342,7 +343,7 @@
 
 .text-bg-green-3 {
   color: #000 !important;
-  background-color: RGBA(58, 153, 72, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(137, 199, 101, var(--bs-bg-opacity, 1)) !important;
 }
 
 .link-primary {
@@ -571,9 +572,9 @@
   text-decoration-color: RGBA(var(--bs-bolt4k-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-bolt4k:hover, .link-bolt4k:focus {
-  color: RGBA(132, 174, 219, var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: RGBA(132, 174, 219, var(--bs-link-underline-opacity, 1)) !important;
-  text-decoration-color: RGBA(132, 174, 219, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(51, 174, 249, var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: RGBA(51, 174, 249, var(--bs-link-underline-opacity, 1)) !important;
+  text-decoration-color: RGBA(51, 174, 249, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-greens {
@@ -604,9 +605,9 @@
   text-decoration-color: RGBA(var(--bs-green-3-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-green-3:hover, .link-green-3:focus {
-  color: RGBA(97, 173, 109, var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: RGBA(97, 173, 109, var(--bs-link-underline-opacity, 1)) !important;
-  text-decoration-color: RGBA(97, 173, 109, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(161, 210, 132, var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: RGBA(161, 210, 132, var(--bs-link-underline-opacity, 1)) !important;
+  text-decoration-color: RGBA(161, 210, 132, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-body-emphasis {
@@ -2244,27 +2245,27 @@
 }
 
 .fs-1 {
-  font-size: calc(1.375rem + 1.5vw) !important;
+  font-size: calc(1.405rem + 1.86vw) !important;
 }
 
 .fs-2 {
-  font-size: calc(1.325rem + 0.9vw) !important;
+  font-size: calc(1.37rem + 1.44vw) !important;
 }
 
 .fs-3 {
-  font-size: calc(1.3rem + 0.6vw) !important;
+  font-size: calc(1.325rem + 0.9vw) !important;
 }
 
 .fs-4 {
-  font-size: calc(1.275rem + 0.3vw) !important;
+  font-size: calc(1.285rem + 0.42vw) !important;
 }
 
 .fs-5 {
-  font-size: 1.25rem !important;
+  font-size: 1.2rem !important;
 }
 
 .fs-6 {
-  font-size: calc(1.325rem + 0.9vw) !important;
+  font-size: 1rem !important;
 }
 
 .fs-7 {
@@ -7038,19 +7039,16 @@
 }
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 2.5rem !important;
+    font-size: 2.8rem !important;
   }
   .fs-2 {
-    font-size: 2rem !important;
+    font-size: 2.45rem !important;
   }
   .fs-3 {
-    font-size: 1.75rem !important;
+    font-size: 2rem !important;
   }
   .fs-4 {
-    font-size: 1.5rem !important;
-  }
-  .fs-6 {
-    font-size: 2rem !important;
+    font-size: 1.6rem !important;
   }
   .fs-7 {
     font-size: 2.5rem !important;
